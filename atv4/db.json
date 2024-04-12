@@ -1,0 +1,16 @@
+{
+    "turma": [
+        {
+            "id": 1,
+            "sigla": "1° DSN"
+        },
+        {
+            "id": 2,
+            "sigla": "2° DSN"
+        },
+        {
+            "id": 3,
+            "sigla": "3° DSN"
+        }
+    ]
+}
