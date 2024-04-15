@@ -1,4 +1,4 @@
-.home_container{
+.home{
     width: 100%;
     margin-top: 10px;
     display: flex;
@@ -9,18 +9,14 @@
     background-color: grey;
 }
 
-.home_container h1{
+.home_h1{
     font-size: 2.5em;
     margin-bottom: .5em;
 }
 
-.home_container h1 span{
+.home_h1 span{
     color: #7733ff;
     padding: 0 .2em;
 
 }
 
-.home_container img{
-    width: 350px;
-    margin: 2em 0;
-}
