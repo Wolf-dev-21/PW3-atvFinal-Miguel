@@ -7,10 +7,10 @@ import { Select } from '../../components/select/Select';
 
 import style from './Home.module.css'
 
-
-
-
 export default function Home() {
+
+  const navigate = useNavigate();
+
   const [sigla, setSigla] = useState([]);
 
   const [nome, setNome] = useState([]);
@@ -38,7 +38,7 @@ export default function Home() {
 }, [])
 
 function handlerOnChanceNome(event) {
-  setTurma({...nome, [event.target.name] : event.target.value});
+  setNome({...nome, [event.target.name] : event.target.value});
   console.log(nome)
 }
 
@@ -63,17 +63,19 @@ function createNome(nome){
     .then(
       (data) => {
         console.log(data)
-        navigate('./Nome',{state:'Turma cadastrada'})
+        navigate('./Nome')
       }
     )
     .catch(
       (error)=>{console.log(error)}
     )
 
-    function submit(event){
-      event.preventDefault();
-      createNome(nome);
-    }
+    
+}
+
+function submit(event){
+  event.preventDefault();
+  createNome(nome);
 }
 
 return(
