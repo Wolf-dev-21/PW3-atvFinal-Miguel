@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react'
 
 import {useNavigate} from 'react-router-dom';
 
-import Input from '../../components/Nome/Nome';
-import { Select } from '../../components/select/Select';
+import Input from '../../../components/Nome/Nome';
+import { Select } from '../../../components/select/Select';
 
-import style from './Home.module.css'
+import './Home.module.css'
 
 export default function Home() {
 
